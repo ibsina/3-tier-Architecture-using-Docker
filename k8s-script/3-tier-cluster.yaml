@@ -24,7 +24,7 @@ managedNodeGroups:
 - name: frontend
   instanceType: m5.large
   labels: { role: frontend }
-  desiredCapacity: 1
+  desiredCapacity: 2
   privateNetworking: true
   subnets:
     - frontend
