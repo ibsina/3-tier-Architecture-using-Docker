@@ -15,12 +15,8 @@ vpc:
     private:
       frontend-az1:
         id: subnet-09ce085f9d58c82d7
-      frontend-az2:
-        id: subnet-080cf9bb5a360c95c
       backend-az1:
         id: subnet-00a3849e2ea94267d
-      backend-az2:
-        id: subnet-0a32b2419e7c65627
 
 managedNodeGroups:
 - name: frontend
@@ -30,7 +26,6 @@ managedNodeGroups:
   privateNetworking: true
   subnets:
     - frontend-az1
-    - frontend-az2
 - name: backend
   instanceType: m5.large
   labels: { role: backend }
@@ -38,4 +33,3 @@ managedNodeGroups:
   privateNetworking: true
   subnets:
     - backend-az1
-    - backend-az2
