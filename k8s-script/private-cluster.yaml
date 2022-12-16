@@ -20,8 +20,13 @@ vpc:
 
 
 managedNodeGroups:
-- name: m1
+- name: frontend
   instanceType: m5.large
-  labels: { role: web }
-  desiredCapacity: 2
+  labels: { role: frontend }
+  desiredCapacity: 1
+  privateNetworking: true
+- name: backend
+  instanceType: m5.large
+  labels: { role: backend }
+  desiredCapacity: 1
   privateNetworking: true
