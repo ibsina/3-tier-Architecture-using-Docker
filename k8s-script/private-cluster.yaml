@@ -32,6 +32,9 @@ managedNodeGroups:
   privateNetworking: true
 - name: test
   desiredCapacity: 1
+  privateNetworking: true
+  labels: { role: backend }
+  instanceType: m5.large
   ssh: # import public key from file
     publicKeyPath: ~/.ssh/id_rsa.pub
   subnets:
