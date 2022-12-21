@@ -30,3 +30,9 @@ managedNodeGroups:
   labels: { role: backend }
   desiredCapacity: 1
   privateNetworking: true
+- name: subnets
+  desiredCapacity: 1
+  ssh: # import public key from file
+    publicKeyPath: ~/.ssh/id_rsa.pub
+  subnets:
+  - subnet-0f7e27a57f2a635a3
