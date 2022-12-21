@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: private-cluster-cbc
+  name: private-cluster1-cbc
   region: ap-southeast-1
 
 privateCluster:
