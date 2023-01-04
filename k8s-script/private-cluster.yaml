@@ -23,28 +23,14 @@ managedNodeGroups:
 - name: frontend-az1
   instanceType: m5.large
   labels: { role: frontend }
-  desiredCapacity: 2
+  desiredCapacity: 1
   privateNetworking: true
   subnets:
   - subnet-09ce085f9d58c82d7
-- name: frontend-az2
-  instanceType: m5.large
-  labels: { role: frontend }
-  desiredCapacity: 2
-  privateNetworking: true
-  subnets:
-  - subnet-080cf9bb5a360c95c
 - name: backend-az1
   instanceType: m5.large
   labels: { role: backend }
-  desiredCapacity: 2
+  desiredCapacity: 1
   privateNetworking: true
   subnets:
    - subnet-00a3849e2ea94267d
-- name: backend-az2
-  instanceType: m5.large
-  labels: { role: backend }
-  desiredCapacity: 2
-  privateNetworking: true
-  subnets:
-   - subnet-0a32b2419e7c65627
