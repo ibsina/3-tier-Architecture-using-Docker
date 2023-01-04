@@ -19,7 +19,7 @@ def addrec():
 		here=request.form
 		print(type(here))
 		print(dict(here))
-		requests.post('internalfwb-48fd19b41a8bb255.elb.ap-southeast-1.amazonaws.com/test',json=dict(here))
+		requests.post('http://internalfwb-48fd19b41a8bb255.elb.ap-southeast-1.amazonaws.com/test',json=dict(here))
 		print("id=",Id)
 		print('nm=',nm)
 		print('nm1=',nm1)
